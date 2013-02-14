@@ -7,12 +7,12 @@ Installation
 
 Clone the repository from Github
 
-    $ git clone git://github.com/mhoofman/wordpress-heroku.git
+    $ git clone git://github.com/kaorumori/wordpress-heroku.git
     
 With the [Heroku gem](http://devcenter.heroku.com/articles/heroku-command), create your app
 
     $ cd wordpress-heroku
-    $ heroku create
+    $ heroku create -s cedar -b git://github.com/iphoting/heroku-buildpack-php-tyler.git
     > Creating strange-turtle-1234... done, stack is cedar
     > http://strange-turtle-1234.herokuapp.com/ | git@heroku.com:strange-turtle-1234.git
     > Git remote heroku added
